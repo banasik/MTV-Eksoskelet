@@ -1,0 +1,45 @@
+\input{Dokumentklassen}
+
+\usepackage{url}
+\usepackage{hyperref}
+%\usepackage{natbib}
+%\bibliographystyle{plainnat}
+%\usepackage{biblatex}
+
+\raggedbottom
+
+%\externaldocument[D-]{Dokumentation}
+
+\begin{document}
+
+	
+\frontmatter						% Nummereres med romerske tal.
+\let\cleardoublepage\clearpage
+\include{Rfiler/Rforside}
+
+%\include{Rfiler/Rresume}
+%\include{Rfiler/Rabstract}
+%\include{Rfiler/Runderskrifter}
+%\include{Rfiler/Rgodkendelsesformular}
+%\include{Rfiler/Rordliste}
+%\cleardoublepage	
+	
+\tableofcontents*                   % Indsætter en indholdsfortegnelse før Indledning.
+
+\mainmatter                         % Her findes de nummererede kapitler modsat \frontmatter og \backmatter. Nummereres med arabiske tal.
+
+\include{Rfiler/Rindledning}
+%\include{Rfiler/Rprojektformulering}
+%\include{Rfiler/Rforskning}
+%\include{Rfiler/Rsystembeskrivelse}
+%\include{Rfiler/Rkrav}
+%\include{Rfiler/Rprojektbeskrivelse}
+%\include{Rfiler/Rkonklusion}
+%\include{Rfiler/Rbilag}
+
+\backmatter
+%\bibliography{bibliografi/PRJ3}    % Sætter bibliografien bagerst i dokumentet. Bruger bib-filen PRJ3.
+\newpage
+%\listoffigures %Figurliste
+
+\end{document}
